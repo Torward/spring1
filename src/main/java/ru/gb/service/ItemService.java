@@ -16,8 +16,8 @@ public class ItemService {
     public List<Item> findAll(){
         return itemRepository.findAll();
     }
-    public Item findById(Integer id) {
-        return itemRepository.findById(id).orElse(new Item());
+    public Item findById(Long id) {
+        return itemRepository.findById(id);
     }
 
     public Item save(Item item) {
@@ -26,5 +26,9 @@ public class ItemService {
 
     public Item edit(Item item) {
         return itemRepository.edit(item);
+    }
+
+    public void delete(Item item){
+         itemRepository.delete(item);
     }
 }
