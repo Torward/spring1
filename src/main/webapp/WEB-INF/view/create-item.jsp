@@ -18,6 +18,9 @@
     <br>
    Стоимость: <form:input path="cost"/>
     <br>
+    Дата изготовления: <form:input path="date"/>
+    <br>
+    Код изготовителя: <form:input path="manufacturer" value="${product.manufacturer.id.longValue()}"/>
     <input type="submit" value="Submit">
 </form:form>
 </body>

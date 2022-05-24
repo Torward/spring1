@@ -12,8 +12,8 @@
     <title>Продукт</title>
 </head>
 <body>
-<h2> Название продукта: ${item.title}</h2>
-<h2> Стоимость продукта: ${item.cost}</h2>
+<h2> Название продукта: ${product.title}</h2>
+<h2> Стоимость продукта: ${product.cost}</h2>
 
 <%--<c:url var="deleteUrl" value="/message/delete">--%>
 <%--    <c:param name="id" value="${message.id}"/>--%>
@@ -24,7 +24,7 @@
 <%--<br>--%>
 
 <c:url var="editUrl" value="/product/edit">
-    <c:param name="id" value="${item.id}"/>
+    <c:param name="id" value="${product.id}"/>
 </c:url>
 
 <a href="${editUrl}">EDIT</a>
